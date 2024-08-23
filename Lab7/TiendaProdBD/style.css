@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-width: 970px; 
+}
+
+h1, h2 {
+    color: #444;
+    margin-top: 20px;
+}
+
+.cont-formularios{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+.formularios{
+    padding: 10px;
+
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    height: 80%;
+}
+
+input[type="text"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #3d3d3d;
+    color: white;
+    cursor: pointer;
+}
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #3d3d3d;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+p {
+    margin: 20px;
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Media query para evitar que la página se achique más allá de 970px */
+@media (max-width: 970px) {
+    body {
+        min-width: 970px; /* Asegura que el ancho mínimo sea 970px */
+        overflow-x: auto; /* Habilita el scroll horizontal si es necesario */
+    }
+
+    .cont-formularios {
+        flex-direction: column; /* Organiza los formularios uno debajo del otro */
+    }
+
+    table {
+        width: 80%; /* Asegura que las tablas ocupen el ancho completo disponible */
+    }
+}
